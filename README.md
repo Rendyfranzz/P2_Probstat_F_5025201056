@@ -285,15 +285,16 @@ Menggunakan fungsi `TukeyHSD` sebagai berikut
 tukey <- TukeyHSD(anova)
 print(tukey)
 ```
+<img width="403" alt="image" src="https://user-images.githubusercontent.com/90760961/170870578-74796682-260c-40bc-88dd-5e44907f77dd.png">
+<img width="335" alt="image" src="https://user-images.githubusercontent.com/90760961/170870617-6b31bb5c-94df-4dc5-b3d1-0907cc446273.png">
 
 #### 5e
-Gunakan compact letter display untuk menunjukkan perbedaan signifikan antara uji Anova dan uji Tukey
-
 Awalnya yaitu membuat compact letter display sebagai berikut
 ```
 tukey.cld <- multcompLetters4(anova, tukey)
 print(tukey.cld)
 ```
+<img width="452" alt="image" src="https://user-images.githubusercontent.com/90760961/170870646-70da2ebc-2d43-4c1e-91f4-80a37b8036af.png">
 
 </br>
 Tambahkan compact letter display tersebut ke tabel dengan means(rata-rata) dan sd
@@ -303,3 +304,4 @@ cld <- as.data.frame.list(tukey.cld$`Glass:Temp_Factor`)
 data_summary$Tukey <- cld$Letters
 print(data_summary)
 ```
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/90760961/170870667-5e6ad57b-6355-4634-8b6d-cc27b91329e1.png">
