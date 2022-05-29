@@ -22,8 +22,8 @@ sd_sebelum
 sd_sesudah
 ```
 Maka hasilnya : 
-<img width="121" alt="image" src="https://user-images.githubusercontent.com/90760961/170852587-44e983c5-3292-4da3-a744-d2369a989cf6.png">
 </br>
+<img width="121" alt="image" src="https://user-images.githubusercontent.com/90760961/170852587-44e983c5-3292-4da3-a744-d2369a989cf6.png">
 
 
 #### 1b
