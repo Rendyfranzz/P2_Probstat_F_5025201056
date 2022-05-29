@@ -65,7 +65,7 @@ Source:https://id.scribd.com/document/78734881/Reviliyana-116100068-Tugas-UTS-Su
 #### 2a
 Apakah Anda setuju dengan klaim tersebut?
 
-*Setuju*
+*Tidak Setuju*
 
 #### 2b
 Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900
@@ -75,17 +75,21 @@ H0 : μ = 20000
 ```
 Alternatif hipotesisnya yaitu
 ```
-H1 : μ > 20000
+H1 : μ < 20000
+```
+```
+α = 0.01
 ```
 
 #### 2c
-Untuk mencari nilai z nya yaitu
+Untuk mencari nilai z dan p-value nya yaitu
 
 </br>
+<img width="535" alt="image" src="https://user-images.githubusercontent.com/90760961/170852871-753fa2e2-010e-48d0-a0dc-514fd759c408.png">
 
-Lalu mencari nilai p-value nya sebagai berikut
-
-Sehingga kesimpulan yang didapat adalah bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
+Keputusan : karena nilai-P hitungan lebih kecil dari taraf keberartian α yang ditentukan, maka tolak H0
+dengan P < 0,0001.
+Kesimpulan : Rata-rata sebuah mobil dikendarai sejauh <20.000 kmsetahun.
 
 ### Nomor 3
 
