@@ -163,17 +163,22 @@ Plot kuartil normal:
 group 1:
 <br>
 <img width="415" alt="image" src="https://user-images.githubusercontent.com/90760961/170878416-199b2c34-cf75-4c25-8251-7918f12ac0cc.png">
+<br>
 group 2:
 <br>
 <img width="407" alt="image" src="https://user-images.githubusercontent.com/90760961/170878484-adf3ede9-a7b3-4fc6-bf60-a8f669f138c4.png">
+<br>
 group 3:
 <br>
 <img width="416" alt="image" src="https://user-images.githubusercontent.com/90760961/170878523-39474c46-b233-49d5-9aad-50c970b50b8e.png">
+<br>
 #### 4b
 <img width="418" alt="image" src="https://user-images.githubusercontent.com/90760961/170878574-295a7da1-e9b5-46f4-935b-26157819fc1e.png">
+<br>
 
 #### 4c
 <img width="398" alt="image" src="https://user-images.githubusercontent.com/90760961/170878728-db154941-7b3c-491f-8ca0-3b0a48fcd225.png">
+<br>
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/90760961/170878754-5466e650-12fc-47ab-b2dc-e3d5ce2420a6.png">
 
 #### 4d
