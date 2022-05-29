@@ -124,15 +124,17 @@ library(mosaic)
 ```
 plotDist(dist='t', df=2, col="blue")
 ```
+<img width="431" alt="image" src="https://user-images.githubusercontent.com/90760961/170854117-7d19eca9-e83a-4f5a-bfe3-5ae89d0c9449.png">
 
 #### 3d
-Nilai kritikal
 Adapun untuk mendapatkan nilai kritikal bisa menggunakan `qchisq` dengan `df=2` sesuai soal sebelumnya
+```
+qchisq(p = 0.05, df = 2, lower.tail=FALSE)
+```
+<img width="382" alt="image" src="https://user-images.githubusercontent.com/90760961/170854149-fd29899d-9f71-423e-b05f-7d2f6c7142ca.png">
 
 
 #### 3e
-Keputusan
-
 Teori keputusan adalah teori formal pengambilan keputusan di bawah ketidakpastian. 
 Aksinya adalah : `({a}_{a∈A})`
 Kemungkinan konsekuensi : `({c}_{c∈C})` (tergantung pada keadaan dan tindakan)
