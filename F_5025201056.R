@@ -67,31 +67,53 @@ qchisq(p = 0.05, df = 2, lower.tail=FALSE)
 # Soal 4
 # Soal 4a
 
-myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
-dim(myData)
+myData <- read.table("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt",h=T)
 head(myData)
-attach(myData)
-
-myData$V1 <- as.factor(myData$V1)
-myData$V1 = factor(myData$V1,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih","Kucing Oren"))
-
-class(myData$V1)
-
-group1 <- subset(myData, V1=="Kucing Oren")
-group2 <- subset(myData, V1=="Kucing Hitam")
-group3 <- subset(myData, V1=="Kucing Putih")
-
-# Soal 4b
 
 
-# Soal 4c
-)
+myData$Group <- as.factor(myData$Group)
+table(myData$Group)
 
-# Soal 4d
-# Soal 4e
+str(myData)
 
-# Soal 4f
+myData$Group = factor(myData$Group,labels = c("Kucing Oren", "Kucing Hitam", "Kucing Putih"))
+group1 <- subset(myData, Group=="Kucing Oren")
+group2 <- subset(myData, Group=="Kucing Hitam")
+group3 <- subset(myData, Group=="Kucing Putih")
 
+#plot kuartil
+  qqnorm(group1$Length)
+  qqline(group1$Length)
+
+  qqnorm(group2$Length)
+  qqline(group2$Length)
+
+  qqnorm(group3$Length)
+  qqline(group3$Length)
+
+#4b
+bartlett.test(Length ~ Group, data = myData)
+
+#4c
+model1 = lm(Length ~ Group, data = myData)
+anova(model1)
+model1_1 = aov(Length ~ Group, data=myData)
+summary(model1_1)
+#4d
+# jawaban di readme
+  
+#4e
+plot(TukeyHSD(model1_1))
+
+TukeyHSD(aov(model1))
+TukeyHSD(aov(model1_1))
+ 
+#4f
+library("ggplot2")
+  ggplot(myData, aes(x = Group, y = Length)) +
+     geom_boxplot(fill = "grey80", colour = "black") +
+     scale_x_discrete() + xlab("Treatment Group") +
+     ylab("Length (cm)")
 
 # Soal 5
 # Soal 5a
