@@ -146,39 +146,41 @@ Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tidak ada jika
 
 ### Nomor 4
 #### 4a
-Buatlah masing masing jenis spesies menjadi 3 subjek "Grup" (grup 1,grup 2,grup 3). Lalu Gambarkan plot kuantil normal untuk setiap kelompok dan lihat apakah ada outlier utama dalam homogenitas varians.
-</br>
-Langkah pertama mengambil data dari link yang telah disediadakan
-
+ambil data dari link yang telah disediadakan
 ```
-myFile  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
-dim(myFile)
-head(myFile)
+myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
+dim(myData)
+head(myData)
+attach(myData)
 ```
+Maka ada akan ditambahkan
+<br>
+<img width="396" alt="image" src="https://user-images.githubusercontent.com/90760961/170862933-5f34d8df-e25d-46ad-86ca-e0f822f13f91.png">
 
 Selanjutnya membuat myFile menjadi group 
 ```
-myFile$Group <- as.factor(myFile$Group)
-myFile$Group = factor(myFile$Group,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih"))
+myData$V1 <- as.factor(myData$V1)
+myData$V1 = factor(myData$V1,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih","Kucing Oren"))
 ```
 
 Setelah itu, dicek apakah dia menyimpan nilai di groupnya
 ```
-class(myFile$Group)
+class(myData$Group)
 ```
 
 Lalu bagi tiap valuer menjadi 3 bagian ke 3 grup
 ```
-group1 <- subset(myFile, Group=="Kucing Oren")
-group2 <- subset(myFile, Group=="Kucing Hitam")
-group3 <- subset(myFile, Group=="Kucing Putih")
+group1 <- subset(myData, V1=="Kucing Oren")
+group2 <- subset(myData, V1=="Kucing Hitam")
+group3 <- subset(myData, V1=="Kucing Putih")
 ```
+Maka hasilnya
+<br>
+<img width="417" alt="image" src="https://user-images.githubusercontent.com/90760961/170863547-92f78513-2187-4b5c-a86f-d73ecad44ee1.png">
 #### 4b
-carilah atau periksalah Homogeneity of variances nya , Berapa nilai p yang didapatkan? , Apa hipotesis dan kesimpulan yang dapat diambil ?
-
 Mencari Homogeneity of variances bisa menggunakan command sebagai berikut
 ```
-bartlett.test(Length~Group, data=dataoneway)
+bartlett.test(Length~V1, data=dataoneway)
 ```
 Setelah di jalankan maka nilai p-value = 0.8054. 
 Kesimpulan yang didapatkan yaitu Bartlett's K-squared memiliki nilai sebesar 0.43292 dan df bernilai 2
