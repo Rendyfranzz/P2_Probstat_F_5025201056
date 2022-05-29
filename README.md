@@ -60,6 +60,7 @@ t.test(before, after, var.equal = TRUE)
 Bisa dilihat bahwa mean dan convidence sama dengan 1b, yang berbeda adalah p-value dan df. Sehingga tidak memiliki pengaruh yang signifikan secara statistika
 
 ### Nomor 2
+Source:https://id.scribd.com/document/78734881/Reviliyana-116100068-Tugas-UTS-Susulan
 
 #### 2a
 Apakah Anda setuju dengan klaim tersebut?
