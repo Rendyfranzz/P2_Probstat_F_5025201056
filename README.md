@@ -36,8 +36,8 @@ Untuk mencari nilai p-value maka bisa menggunakan fungsi `t.test` yaitu sebagai 
 t.test(before, after, alternative = "greater", var.equal = FALSE)
 ```
 Maka hasilnya adalah:
-img
 </br>
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/90760961/170852662-4f23b574-21fb-4239-b22c-8cc98e448f9c.png">
 
 #### 1c
 
@@ -47,6 +47,7 @@ var.test(before, after)
 ```
 
 </br>
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/90760961/170852689-59861f58-e976-4bac-b301-630c237632dd.png">
 
 Selanjutnya, untuk melihat pengaruh jika tingkat signifikasi 5% dan tidak ada pengaruh yang signifikan secara statistika, maka adalah sebagai berikut
 ```
@@ -54,6 +55,7 @@ t.test(before, after, var.equal = TRUE)
 ```
 
 </br>
+<img width="486" alt="image" src="https://user-images.githubusercontent.com/90760961/170852706-f611f81e-35c3-47f0-8780-03e6f32b7c3e.png">
 
 Bisa dilihat bahwa mean dan convidence sama dengan 1b, yang berbeda adalah p-value dan df. Sehingga tidak memiliki pengaruh yang signifikan secara statistika
 
