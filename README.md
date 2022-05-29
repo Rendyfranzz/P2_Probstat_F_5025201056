@@ -136,45 +136,58 @@ Kesimpulan Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tid
 #### 4a
 ambil data dari link yang telah disediadakan
 ```
-myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt")) 
-dim(myData)
+myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt"))
 head(myData)
-attach(myData)
 ```
-Maka ada akan ditambahkan
 <br>
-<img width="396" alt="image" src="https://user-images.githubusercontent.com/90760961/170862933-5f34d8df-e25d-46ad-86ca-e0f822f13f91.png">
 
 Selanjutnya membuat myFile menjadi group 
 ```
-myData$V1 <- as.factor(myData$V1)
-myData$V1 = factor(myData$V1,labels = c("Kucing Oren","Kucing Hitam","Kucing Putih","Kucing Oren"))
+myData$Group <- as.factor(myData$Group)
+table(myData$Group)
+str(myData)
 ```
-
-Setelah itu, dicek apakah dia menyimpan nilai di groupnya
-```
-class(myData$Group)
-```
+<img width="486" alt="image" src="https://user-images.githubusercontent.com/90760961/170878224-2d7714e8-9d62-4014-8627-4bc2b7efb6ba.png">
 
 Lalu bagi tiap valuer menjadi 3 bagian ke 3 grup
 ```
+myData$Group = factor(myData$Group,labels = c("Kucing Oren", "Kucing Hitam", "Kucing Putih"))
 group1 <- subset(myData, V1=="Kucing Oren")
 group2 <- subset(myData, V1=="Kucing Hitam")
 group3 <- subset(myData, V1=="Kucing Putih")
 ```
 Maka hasilnya
 <br>
-<img width="417" alt="image" src="https://user-images.githubusercontent.com/90760961/170863547-92f78513-2187-4b5c-a86f-d73ecad44ee1.png">
+<img width="340" alt="image" src="https://user-images.githubusercontent.com/90760961/170878333-39bc38c4-fd74-4b99-a30a-373d48624a19.png">
+Plot kuartil normal:
+group 1:
+<br>
+<img width="415" alt="image" src="https://user-images.githubusercontent.com/90760961/170878416-199b2c34-cf75-4c25-8251-7918f12ac0cc.png">
+group 2:
+<br>
+<img width="407" alt="image" src="https://user-images.githubusercontent.com/90760961/170878484-adf3ede9-a7b3-4fc6-bf60-a8f669f138c4.png">
+group 3:
+<br>
+<img width="416" alt="image" src="https://user-images.githubusercontent.com/90760961/170878523-39474c46-b233-49d5-9aad-50c970b50b8e.png">
 #### 4b
+<img width="418" alt="image" src="https://user-images.githubusercontent.com/90760961/170878574-295a7da1-e9b5-46f4-935b-26157819fc1e.png">
 
 #### 4c
+<img width="398" alt="image" src="https://user-images.githubusercontent.com/90760961/170878728-db154941-7b3c-491f-8ca0-3b0a48fcd225.png">
+<img width="408" alt="image" src="https://user-images.githubusercontent.com/90760961/170878754-5466e650-12fc-47ab-b2dc-e3d5ce2420a6.png">
 
 #### 4d
-
+Karena p-value 0,0013 yang lebih kecil dari 0,05 maka saya menolak H0
 
 #### 4e
+Perbandingan panjang jenis kucing
+<br>
+<img width="414" alt="image" src="https://user-images.githubusercontent.com/90760961/170878804-96575ac0-41e8-447b-a71a-edecb069b7cc.png">
+<img width="410" alt="image" src="https://user-images.githubusercontent.com/90760961/170879252-a49c9616-4d77-499d-a45c-860a099dea76.png">
+<img width="427" alt="image" src="https://user-images.githubusercontent.com/90760961/170879335-30a632de-e814-426d-8c4e-0ac984d42b3e.png">
 
 #### 4f
+<img width="429" alt="image" src="https://user-images.githubusercontent.com/90760961/170879026-0e36b5fc-55bc-479f-8e87-76dbd46dcd87.png">
 
 ### Nomor 5
 #### 5a
