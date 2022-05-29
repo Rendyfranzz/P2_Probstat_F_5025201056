@@ -11,7 +11,7 @@
 #### 1a
 Langkah pertama penyelesaian adalah memasukkan semua data yang ada pada tabel pada sebuah variabel sebagai berikut
 ```
-before <- c(78, 75, 67, 77, 70, 72, 28, 74, 77)
+before <- c(78, 75, 67, 77, 70, 72, 78, 74, 77)
 after <- c(100, 95, 70, 90, 90, 90, 89, 90, 100)
 ```
 Selanjutnya mencari standar deviasinya. Standar deviasi sebelum dan sesudah aktivitas adalah
@@ -23,7 +23,7 @@ sd_sesudah
 ```
 Maka hasilnya : 
 </br>
-<img width="121" alt="image" src="https://user-images.githubusercontent.com/90760961/170852587-44e983c5-3292-4da3-a744-d2369a989cf6.png">
+<img width="126" alt="image" src="https://user-images.githubusercontent.com/90760961/170875434-62f66b96-f899-4982-ab8c-b7255ad23277.png">
 
 
 #### 1b
@@ -37,8 +37,7 @@ t.test(before, after, alternative = "greater", var.equal = FALSE)
 ```
 Maka hasilnya adalah:
 </br>
-<img width="487" alt="image" src="https://user-images.githubusercontent.com/90760961/170852662-4f23b574-21fb-4239-b22c-8cc98e448f9c.png">
-
+<img width="487" alt="image" src="https://user-images.githubusercontent.com/90760961/170875480-54aadde4-ca13-46b0-9948-013b9daded68.png">
 #### 1c
 
 Langkah pertama yaitu melihat hasil komparasi dua variabel berikut
@@ -47,7 +46,7 @@ var.test(before, after)
 ```
 
 </br>
-<img width="487" alt="image" src="https://user-images.githubusercontent.com/90760961/170852689-59861f58-e976-4bac-b301-630c237632dd.png">
+<img width="491" alt="image" src="https://user-images.githubusercontent.com/90760961/170875496-0e3994ee-fc1d-498f-bc82-27071cccb671.png">
 
 Selanjutnya, untuk melihat pengaruh jika tingkat signifikasi 5% dan tidak ada pengaruh yang signifikan secara statistika, maka adalah sebagai berikut
 ```
@@ -55,9 +54,7 @@ t.test(before, after, var.equal = TRUE)
 ```
 
 </br>
-<img width="486" alt="image" src="https://user-images.githubusercontent.com/90760961/170852706-f611f81e-35c3-47f0-8780-03e6f32b7c3e.png">
-
-Bisa dilihat bahwa mean dan convidence sama dengan 1b, yang berbeda adalah p-value dan df. Sehingga tidak memiliki pengaruh yang signifikan secara statistika
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/90760961/170875527-11977035-cb6e-4536-b3ec-e753a547d4b0.png">
 
 ### Nomor 2
 Source:https://www.assignmentexpert.com/homework-answers/mathematics/statistics-and-probability/question-116631
