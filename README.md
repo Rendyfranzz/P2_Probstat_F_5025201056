@@ -130,14 +130,8 @@ qchisq(p = 0.05, df = 2, lower.tail=FALSE)
 
 
 #### 3e
-Teori keputusan adalah teori formal pengambilan keputusan di bawah ketidakpastian. 
-Aksinya adalah : `({a}_{a∈A})`
-Kemungkinan konsekuensi : `({c}_{c∈C})` (tergantung pada keadaan dan tindakan)
-Maka keputusan dapat dibuat dengan `t.test`
 
 #### 3f
-Kesimpulan
-Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tidak ada jika dilihat dari uji statistik dan akan ada tetapi tidak signifikan jika dipengaruhi nilai kritikal.
 
 ### Nomor 4
 #### 4a
