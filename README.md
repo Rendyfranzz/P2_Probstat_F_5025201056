@@ -160,6 +160,7 @@ group3 <- subset(myData, V1=="Kucing Putih")
 Maka hasilnya
 <br>
 <img width="340" alt="image" src="https://user-images.githubusercontent.com/90760961/170878333-39bc38c4-fd74-4b99-a30a-373d48624a19.png">
+<br>
 Plot kuartil normal:
 <br>
 group 1:
