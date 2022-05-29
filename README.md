@@ -161,6 +161,7 @@ Maka hasilnya
 <br>
 <img width="340" alt="image" src="https://user-images.githubusercontent.com/90760961/170878333-39bc38c4-fd74-4b99-a30a-373d48624a19.png">
 Plot kuartil normal:
+<br>
 group 1:
 <br>
 <img width="415" alt="image" src="https://user-images.githubusercontent.com/90760961/170878416-199b2c34-cf75-4c25-8251-7918f12ac0cc.png">
