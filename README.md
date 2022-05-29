@@ -97,9 +97,11 @@ Kesimpulan : Rata-rata sebuah mobil dikendarai sejauh <20.000 kmsetahun.
 H0 dan H1
 dilakukan perhitungan H0 sebagai berikut
 </br>
+<img width="203" alt="image" src="https://user-images.githubusercontent.com/90760961/170853033-397f65db-56ad-447f-8fa5-51750cc67f48.png">
 </br>
 dilakukan perhitungan H1 sebagai berikut
 </br>
+<img width="211" alt="image" src="https://user-images.githubusercontent.com/90760961/170853048-445581cc-9716-462e-9f96-ae896a96830b.png">
 
 #### 3b
 Hitung Sampel Statistik
@@ -107,6 +109,7 @@ Penghitungan dilakukan sebagai berikut
 ```
 tsum.test(mean.x=3.64, s.x = 1.67, n.x = 19, mean.y =2.79 , s.y = 1.32, n.y = 27, alternative = "greater", var.equal = TRUE)
 ```
+<img width="492" alt="image" src="https://user-images.githubusercontent.com/90760961/170853244-2fd93d12-bae9-4165-945b-ddc9f567c538.png">
 
 
 #### 3c
