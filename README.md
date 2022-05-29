@@ -194,7 +194,7 @@ library(dplyr)
 
 Selanjutnya membaca file GTL.csv dari documents
 ```
-GTL <- read_csv("GTL.csv")
+GTL <- read_csv("C:/Users/rendi/Downloads/GTL.csv")
 head(GTL)
 ```
 </br>
