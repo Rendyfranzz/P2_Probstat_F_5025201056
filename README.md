@@ -180,6 +180,7 @@ group 3:
 <img width="398" alt="image" src="https://user-images.githubusercontent.com/90760961/170878728-db154941-7b3c-491f-8ca0-3b0a48fcd225.png">
 <br>
 <img width="408" alt="image" src="https://user-images.githubusercontent.com/90760961/170878754-5466e650-12fc-47ab-b2dc-e3d5ce2420a6.png">
+<br>
 
 #### 4d
 Karena p-value 0,0013 yang lebih kecil dari 0,05 maka saya menolak H0
@@ -188,8 +189,11 @@ Karena p-value 0,0013 yang lebih kecil dari 0,05 maka saya menolak H0
 Perbandingan panjang jenis kucing
 <br>
 <img width="414" alt="image" src="https://user-images.githubusercontent.com/90760961/170878804-96575ac0-41e8-447b-a71a-edecb069b7cc.png">
+<br>
 <img width="410" alt="image" src="https://user-images.githubusercontent.com/90760961/170879252-a49c9616-4d77-499d-a45c-860a099dea76.png">
+<br>
 <img width="427" alt="image" src="https://user-images.githubusercontent.com/90760961/170879335-30a632de-e814-426d-8c4e-0ac984d42b3e.png">
+<br>
 
 #### 4f
 <img width="429" alt="image" src="https://user-images.githubusercontent.com/90760961/170879026-0e36b5fc-55bc-479f-8e87-76dbd46dcd87.png">
