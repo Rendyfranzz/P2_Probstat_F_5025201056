@@ -20,57 +20,34 @@ Carilah Standar Deviasi dari data selisih pasangan pengamatan tabel diatas
 Langkah pertama penyelesaian adalah memasukkan semua data yang ada pada tabel pada sebuah variabel sebagai berikut
 ```
 before <- c(78, 75, 67, 77, 70, 72, 28, 74, 77)
-```
-```
 after <- c(100, 95, 70, 90, 90, 90, 89, 90, 100)
 ```
-Setelah dimasukkan semua datanya, maka dilakukan cek data menggunakan `data.frame` yaitu
+Selanjutnya mencari standar deviasinya. Standar deviasi sebelum dan sesudah aktivitas adalah
 ```
-my_data <- data.frame(
-    group = rep(c("sebelum", "sesudah"), each = 9),
-    saturation = c(before, after)
-)
-```
-Setelah itu dilihat hasil framenya sebagai berikut
-```
-print(my_data)
-```
-
-Selanjutnya mencari standar deviasinya. Standar deviasi sebelum aktivitas adalah
-```
-SD_before <- sd(before)
-SD_before
+sd_sebelum <- sd(before)
+sd_sesudah <- sd(after)
+sd_sebelum
+sd_sesudah
 ```
 Maka hasilnya : 
-</br>
-
-</br>
-
-Standar deviasi setelah aktivitas adalah
-```
-SD_after <-sd(after)
-SD_after
-```
-Maka hasilnya : 
+img
 </br>
 
 
 #### 1b
-carilah nilai t (p-value)
+cari nilai t (p-value)
 
 </br>
 
-Untuk mencari nilai t terutama p-value maka bisa menggunakan fungsi `t.test` yaitu sebagai berikut
+Untuk mencari nilai p-value maka bisa menggunakan fungsi `t.test` yaitu sebagai berikut
 ```
 t.test(before, after, alternative = "greater", var.equal = FALSE)
 ```
-Maka hasilnya adalah: 
+Maka hasilnya adalah:
+img
 </br>
 
 #### 1c
-tentukanlah apakah terdapat pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen, sebelum dan sesudah melakukan aktivitas 𝐴 jika diketahui tingkat signifikansi 𝛼 = 5% serta H0 : “tidak ada pengaruh yang signifikan secara statistika dalam hal kadar saturasi oksigen , sebelum dan sesudah melakukan aktivitas 𝐴”
-
-</br>
 
 Langkah pertama yaitu melihat hasil komparasi dua variabel berikut
 ```
@@ -89,7 +66,6 @@ t.test(before, after, var.equal = TRUE)
 Bisa dilihat bahwa mean dan convidence sama dengan 1b, yang berbeda adalah p-value dan df. Sehingga tidak memiliki pengaruh yang signifikan secara statistika
 
 ### Nomor 2
-Diketahui bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun. Untuk menguji klaim ini, 100 pemilik mobil yang dipilih secara acak diminta untuk mencatat jarak yang mereka tempuh. Jika sampel acak menunjukkan rata-rata 23.500 kilometer dan standar deviasi 3900 kilometer. (Kerjakan menggunakan 2 library seperti referensi pada modul).
 
 #### 2a
 Apakah Anda setuju dengan klaim tersebut?
@@ -97,10 +73,6 @@ Apakah Anda setuju dengan klaim tersebut?
 *Setuju*
 
 #### 2b
-Jelaskan maksud dari output yang dihasilkan!
-
-
-
 Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900
 Maka null hipotesis adalah 
 ```
@@ -112,10 +84,8 @@ H1 : μ > 20000
 ```
 
 #### 2c
-Buatlah kesimpulan berdasarkan P-Value yang dihasilkan!
+Untuk mencari nilai z nya yaitu
 
-
-Untuk mencari nilai z nya yaitu 
 </br>
 
 Lalu mencari nilai p-value nya sebagai berikut
