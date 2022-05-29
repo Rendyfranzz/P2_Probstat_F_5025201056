@@ -169,46 +169,15 @@ Maka hasilnya
 <br>
 <img width="417" alt="image" src="https://user-images.githubusercontent.com/90760961/170863547-92f78513-2187-4b5c-a86f-d73ecad44ee1.png">
 #### 4b
-Mencari Homogeneity of variances bisa menggunakan command sebagai berikut
-```
-bartlett.test(Length~V1, data=dataoneway)
-```
-Setelah di jalankan maka nilai p-value = 0.8054. 
-Kesimpulan yang didapatkan yaitu Bartlett's K-squared memiliki nilai sebesar 0.43292 dan df bernilai 2
+
 #### 4c
 
-```
-qqnorm(group1$Length)
-qqline(group1$Length)
-```
-
-
 #### 4d
-Dari Hasil Poin C, Berapakah nilai-p ? , Apa yang dapat Anda simpulkan dari H0?
-Setelah di jalankan maka nilai p-value = 0.8054. 
+
 
 #### 4e
-Verifikasilah jawaban model 1 dengan Post-hoc test Tukey HSD, dari nilai p yang didapatkan apakah satu jenis kucing lebih panjang dari yang lain? 3 Jelaskan.
-Langkah pertama adalah menggunakan command ANOVA
-```
-model1 <- lm(Length~Group, data=myFile)
-```
-Selanjutnya menggunakan command 
-```
-anova(model1)
-```
-Lalu menggunakan model Post-hoc Tukey HSD sebagai berikut
-```
-TukeyHSD(aov(model1))
-```
 
 #### 4f
-Visualisasikan data dengan ggplot2
-```
-library(ggplot2)
-ggplot(dataoneway, aes(x = Group, y = Length)) + geom_boxplot(fill = "grey80", colour = "black") + scale_x_discrete() + xlab("Treatment Group") +  ylab("Length (cm)")
-```
-
 
 ### Nomor 5
 #### 5a
