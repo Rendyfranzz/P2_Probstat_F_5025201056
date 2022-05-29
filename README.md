@@ -69,6 +69,9 @@ Apakah Anda setuju dengan klaim tersebut?
 
 #### 2b
 Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900
+Hasil Output:
+<br>
+<img width="454" alt="image" src="https://user-images.githubusercontent.com/90760961/170870379-f20efbd7-e73a-470c-a1af-4f1ff844442d.png">
 Maka null hipotesis adalah 
 ```
 H0 : μ = 20000
@@ -77,13 +80,10 @@ Alternatif hipotesisnya yaitu
 ```
 H1 : μ < 20000
 ```
-<img width="430" alt="image" src="https://user-images.githubusercontent.com/90760961/170869780-870c1439-5ed1-4f17-af8e-2dc3d6489ede.png">
-
+```
+z = 8.9744, p-value < 2.2e-16
+````
 #### 2c
-Untuk mencari nilai z dan p-value nya yaitu
-</br>
-<img width="257" alt="image" src="https://user-images.githubusercontent.com/90760961/170869441-e1c0b5fb-2d8d-4e85-b5b2-e23052231f47.png">
-
 Kesimpulan:Nilai-P kira-kira 0, jadi menolak hipotesis nol dan menyimpulkan bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
 
 ### Nomor 3
