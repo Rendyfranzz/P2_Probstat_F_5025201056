@@ -136,18 +136,19 @@ Kesimpulan Kesimpulan yang didapatkan yaitu perbedaan rata-rata yang terjadi tid
 #### 4a
 ambil data dari link yang telah disediadakan
 ```
-myData  <- read.table(url("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt"))
+myData <- read.table("https://rstatisticsandresearch.weebly.com/uploads/1/0/2/6/1026585/onewayanova.txt",h=T)
 head(myData)
 ```
 <br>
 
-Selanjutnya membuat myFile menjadi group 
+Selanjutnya membuat myData menjadi group 
 ```
 myData$Group <- as.factor(myData$Group)
 table(myData$Group)
 str(myData)
 ```
 <img width="486" alt="image" src="https://user-images.githubusercontent.com/90760961/170878224-2d7714e8-9d62-4014-8627-4bc2b7efb6ba.png">
+<br>
 
 Lalu bagi tiap valuer menjadi 3 bagian ke 3 grup
 ```
