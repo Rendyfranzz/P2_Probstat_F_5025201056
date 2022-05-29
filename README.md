@@ -60,12 +60,12 @@ t.test(before, after, var.equal = TRUE)
 Bisa dilihat bahwa mean dan convidence sama dengan 1b, yang berbeda adalah p-value dan df. Sehingga tidak memiliki pengaruh yang signifikan secara statistika
 
 ### Nomor 2
-Source:https://id.scribd.com/document/78734881/Reviliyana-116100068-Tugas-UTS-Susulan
+Source:https://www.assignmentexpert.com/homework-answers/mathematics/statistics-and-probability/question-116631
 
 #### 2a
 Apakah Anda setuju dengan klaim tersebut?
 
-*Tidak Setuju*
+*Setuju*
 
 #### 2b
 Diketahui n = 100, Rata-Rata (X̄) = 23500, dan standar deviasi(σ) = 3900
@@ -77,19 +77,14 @@ Alternatif hipotesisnya yaitu
 ```
 H1 : μ < 20000
 ```
-```
-α = 0.01
-```
+<img width="430" alt="image" src="https://user-images.githubusercontent.com/90760961/170869780-870c1439-5ed1-4f17-af8e-2dc3d6489ede.png">
 
 #### 2c
 Untuk mencari nilai z dan p-value nya yaitu
-
 </br>
-<img width="535" alt="image" src="https://user-images.githubusercontent.com/90760961/170852871-753fa2e2-010e-48d0-a0dc-514fd759c408.png">
+<img width="257" alt="image" src="https://user-images.githubusercontent.com/90760961/170869441-e1c0b5fb-2d8d-4e85-b5b2-e23052231f47.png">
 
-Keputusan : karena nilai-P hitungan lebih kecil dari taraf keberartian α yang ditentukan, maka tolak H0
-dengan P < 0,0001.
-Kesimpulan : Rata-rata sebuah mobil dikendarai sejauh <20.000 kmsetahun.
+Kesimpulan:Nilai-P kira-kira 0, jadi menolak hipotesis nol dan menyimpulkan bahwa mobil dikemudikan rata-rata lebih dari 20.000 kilometer per tahun
 
 ### Nomor 3
 
@@ -237,30 +232,31 @@ Selanjutnya membaca file GTL.csv dari documents
 GTL <- read_csv("GTL.csv")
 head(GTL)
 ```
-
 </br>
+<img width="245" alt="image" src="https://user-images.githubusercontent.com/90760961/170869172-bbb6ab04-3063-4d72-9348-57917008b634.png">
 
 Lakukan observasi pada data
 ```
 str(GTL)
 ```
 </br>
+<img width="496" alt="image" src="https://user-images.githubusercontent.com/90760961/170869302-a9b1be52-6fbc-409b-911f-af790b377d13.png">
 
 Selanjutnya lakukan viasualisasi menggunakan simple plot yaitu sebagai berikut
 ```
 qplot(x = Temp, y = Light, geom = "point", data = GTL) +
   facet_grid(.~Glass, labeller = label_both)
 ```
+<img width="431" alt="image" src="https://user-images.githubusercontent.com/90760961/170869247-1d588c97-b6c2-4242-8ce2-b987b2497bbc.png">
 
 #### 5b
-Lakukan uji ANOVA dua arah
 Langkah pertama adalah membuat variabel as factor sebagai ANOVA
 ```
 GTL$Glass <- as.factor(GTL$Glass)
 GTL$Temp_Factor <- as.factor(GTL$Temp)
 str(GTL)
 ```
-
+<img width="481" alt="image" src="https://user-images.githubusercontent.com/90760961/170869876-992c4daf-6b9b-4130-8343-9f659592ab6c.png">
 </br>
 
 Selanjutnya melakukan analisis of variance (aov) yaitu sebagai berikut 
@@ -268,10 +264,9 @@ Selanjutnya melakukan analisis of variance (aov) yaitu sebagai berikut
 anova <- aov(Light ~ Glass*Temp_Factor, data = GTL)
 summary(anova)
 ```
+<img width="478" alt="image" src="https://user-images.githubusercontent.com/90760961/170869920-90d06c02-de8d-4006-961f-538becb19d55.png">
 
 #### 5c
-Tampilkan tabel dengan mean dan standar deviasi keluaran cahaya untuk setiap perlakuan (kombinasi kaca pelat muka dan suhu operasi)
-
 Menggunakan `group_by` lalu melakukan `summarise` sesuai mean dan standar deviasi yang berlaku sehingga scriptnya adalah sebagai berikut
 ```
 data_summary <- group_by(GTL, Glass, Temp) %>%
@@ -279,7 +274,7 @@ data_summary <- group_by(GTL, Glass, Temp) %>%
   arrange(desc(mean))
 print(data_summary)
 ```
-
+<img width="449" alt="image" src="https://user-images.githubusercontent.com/90760961/170869984-fbcd6206-c477-4965-8067-48c659a2b7a1.png">
 </br>
 
 #### 5d
